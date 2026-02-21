@@ -1,0 +1,53 @@
+/* styles.css */
+body {
+    background-color: #d0f0c0;
+    color: #000;
+    font-family: "Bubble Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    text-align: center;
+    background-color: #a9c985;
+    padding: 10px;
+  }
+  
+  .review-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  .review {
+    background-color: #c8e6c7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .review h2 {
+    margin-top: 0;
+  }
+  
+  .review img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+  }
+  
+  .order-link {
+    display: inline-block;
+    background-color: #97c777;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+  }
+  
+  .order-link:hover {
+    background-color: #7db960;
+  }

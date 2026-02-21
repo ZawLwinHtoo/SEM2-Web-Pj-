@@ -1,0 +1,26 @@
+body {
+    /* background: linear-gradient(to bottom right, #00cc66 0%, #66ff66 100%); */
+    background-image: url(https://i.pinimg.com/originals/ae/c0/21/aec021a44112f1c70d85ab20125c8554.jpg);
+    background-blend-mode: multiply;  /*Blend mode to apply the color on top of the image*/
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+} 
+.see {
+    font-size: small;
+    text-decoration: none;
+}
+.see:hover {
+    text-decoration: underline;
+}
+.tra {
+    font-size: 20px;
+    text-decoration: none;
+}
+.tra:hover {
+    text-decoration: underline;
+}
+.footanime {
+    margin-top: 2700px;
+}

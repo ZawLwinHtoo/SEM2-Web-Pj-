@@ -1,0 +1,273 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Set background colors */
+  body {
+    background-color: #f0fff0; /* Green Yellow */
+    font-family: 'Arial', sans-serif; /* Fallback font */
+  }
+  
+  /* Header styles */
+  .header {
+    padding: 50px; /* Increase padding to make the header taller */
+    color: rgb(255, 0, 0);
+    font-family: 'Pacifico', cursive; /* Cute font for the title */
+    font-size: 36px; /* Increase font size to make the title bigger */
+}
+  
+  /* Center the content */
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* English and Myanmar review sections */
+  .review-section {
+    background-color: #f0fff0; /* Green Yellow */
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #008000; /* Green */
+    border-radius: 10px;
+    text-align: justify;
+    font-family: 'Quicksand', sans-serif; /* Cute font for reviews */
+  }
+  
+  /* Photo section */
+  
+  
+  
+  
+ /* DVD section */
+ .dvd-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.dvd-box {
+    padding: 20px;
+    border: 1px solid #008000; /* Green */
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    color: black;
+}
+
+.dvd-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://media.tenor.com/8DWXfPFvMWoAAAAd/makima-chainsaw-man.gifhttps://64.media.tumblr.com/b654ea63999f159518278879cea616e7/2b6a83b607744fd8-5f/s1280x1920/9c4973ac1f129129c09b6454eba5414a28cc7d50.gif"); /* Replace with the actual path */
+    opacity: 0.3; /* Adjust opacity as needed */
+    pointer-events: none; /* Allow clicking through the pseudo-element */
+    z-index: -1;
+}
+
+.dvd-box h2 {
+    font-size: 28px; /* Adjust font size as needed */
+}
+
+.dvd-box p {
+    font-size: 18px; /* Adjust font size as needed */
+}
+
+/* DVD images and links */
+.dvd-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.dvd-item {
+    margin: 10px;
+    text-align: center;
+    max-width: 180px; /* Adjust maximum width as needed */
+}
+
+.dvd-item img {
+    width: 100%;
+    max-height: 240px; /* Adjust maximum height as needed */
+}
+
+.dvd-item a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.dvd-item a:hover {
+    text-decoration: underline;
+}
+  
+  /* Styling for links */
+  a {
+    color: #ff0000; /* Green */
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .photo-section {
+    background-color: #f0fff0; /* Green Yellow */
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #008000; /* Green */
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Photo section content */
+.photo-section-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+/* Figures and Anime Pics sections */
+.figures, .anime-pics {
+    flex: 0 0 calc(50% - 20px);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.figures img, .anime-pics img {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+}.figures, .anime-pics {
+    flex: 0 0 calc(50% - 20px);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Figure and Anime item */
+.figure-item, .anime-item {
+    position: relative;
+    width: 80%; /* Adjust width as needed */
+    max-height: 200px; /* Adjust max height as needed */
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.figure-item img, .anime-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.figure-item:hover, .anime-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.anime-details {
+    background-color: #f0fff0; /* Green Yellow */
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #008000; /* Green */
+    border-radius: 10px;
+    text-align: center;
+}
+
+.trailer-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.trailer-box {
+    padding: 20px;
+    background-color: #f0fff0; /* Green Yellow */
+    border: 1px solid #008000; /* Green */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 128, 0, 0.3); /* Green shadow */
+    overflow: hidden;
+    position: relative;
+    font-family: 'Arial', sans-serif; /* Replace with your desired fancy font */
+}
+
+/* Trailer video container */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio for responsive video */
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Photo slider */
+.slider {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+    position: relative; /* Enable relative positioning for buttons */
+}
+
+.slide {
+    flex: 0 0 100%;
+    text-align: center; /* Center images horizontally */
+    
+}
+
+.slide img {
+    width: 600px; /* Set the desired width */
+    height: 480px; /* Set the desired height */
+    object-fit: cover;
+    border: 3px solid #008000; /* Border color matching the theme */
+    border-radius: 15px;
+}
+
+/* Navigation buttons */
+.prev-button, .next-button {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #f0fff0; /* Green Yellow */
+    color: black; /* Text color */
+    border: 2px solid #008000; /* Green */
+    border-radius: 50%; /* Round buttons */
+    font-size: 20px; /* Larger font size */
+    position: absolute; /* Absolute positioning within a relatively positioned container */
+    bottom: -40%; /* Position buttons vertically at the middle */
+    transform: translateY(-30%); /* Adjust vertical position */
+}
+
+.prev-button {
+    left: 10px; /* Position previous button to the left */
+}
+
+.next-button {
+    right: 10px; /* Position next button to the right */
+}
+
+.prev-button:hover, .next-button:hover {
+    background-color: #008000; /* Green */
+    color: white;
+}
+
+.prev-button::before {
+    content: "\2190"; /* Left arrow character */
+}
+
+.next-button::before {
+    content: "\2192"; /* Right arrow character */
+}

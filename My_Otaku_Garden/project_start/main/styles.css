@@ -1,0 +1,140 @@
+/* styles.css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  text-align: center;
+  background-color: #a9c985;
+  padding: 10px;
+}
+
+.review-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.review {
+  background-color: #c8e6c7;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border: 2px solid #fff; /* White border */
+}
+
+.review h2 {
+  margin-top: 0;
+  border-bottom: 2px solid #fff; /* White bottom border for the heading */
+  padding-bottom: 10px;
+}
+
+.review p {
+  border: 2px solid #fff; /* White border for paragraphs */
+  padding: 10px;
+}
+
+.review img {
+  max-width: 100%;
+  height: auto;
+  margin: 10px 0;
+}
+
+.order-link {
+  display: inline-block;
+  background-color: #97c777;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.order-link:hover {
+  background-color: #7db960;
+}
+
+.review-images {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Center images vertically */
+  margin-bottom: 15px;
+}
+
+.review-images img {
+  max-width: 150px; /* Adjust the width as needed */
+  height: auto;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+.review-images img:hover {
+  border-color: red; /* Change border color on hover */
+}
+
+footer {
+  text-align: center;
+  background-color: #a9c985;
+  padding: 10px;
+}
+
+footer p {
+  margin: 0;
+  color: #fff;
+  background-color: #7db960; /* Green background color */
+  padding: 5px;
+  border-radius: 5px;
+}
+.review-text {
+  text-align: center;
+  margin-top: 20px;
+  font-family: 'Georgia', serif;
+}
+
+.review-text p {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+  position: relative;
+}
+
+.quote-mark {
+  font-size: 36px;
+  position: absolute;
+  top: -15px;
+  left: 20px;
+  color: #a9c985;
+}
+
+.video-section {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: rgba(169, 201, 133, 0.3);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.video-section h3 {
+  color: #a9c985;
+}
+
+.video-section p {
+  margin: 10px 0;
+}
+
+.video-section iframe {
+  width: 100%;
+  max-width: 560px;
+  height: 315px;
+  border: none;
+}
+

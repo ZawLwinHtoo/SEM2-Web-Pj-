@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+html {
+    scroll-behavior: smooth;
+}
+#wrapper {
+    font-family: "Comic Neue";
+    /* background-color: #A8E4A0; */
+    width: 100%;
+} 
+ 
+/* Home Section */
+.intro {
+    background-image: url(https://static.myfigurecollection.net/upload/pictures/2020/04/11/2421847.jpeg);
+    background-size: cover;
+    height: 1000px;
+}
+#intro_text {
+    font-family: 'Fredoka One', cursive;
+    font-size: 70px;
+    padding-top: 300px;
+    padding-left: 50px;
+    line-height: 80px;
+    text-align: justify;
+    color: #4ea36a;
+}
+
+.logo {
+    /* width: 250px; */
+    height: 250px;
+    padding-left: 120px;
+    /* position: relative; */
+} 
+/* About Section */
+#about {
+    padding: 70px;
+    text-align: center;
+    background-color:  #95D5B2;
+    box-shadow:0.5px 0.5px 2px 2px #073B3A;
+    justify-content: space-between;
+    margin: 10px ;
+    font-family: 'PT Sans', sans-serif;
+}
+#reflect_box {
+    border: solid  #cfecdf;
+    background-color: #cfecdf;
+    width: 370px;
+    height: 320px;
+    margin: 80px 380px;
+}
+#textbox {
+    /* border-top: solid #ffcda2;
+    border-left: solid #ffcda2; */
+    background-color:#80ae39;
+    box-shadow: 1px #c4e7d7;
+    width: 370px;
+    height: 320px;
+    margin: 30px;
+    /* margin-left: 30px; */
+    line-height: 1.5em;
+    padding: 20px 20px 0 20px;
+    text-align: justify;
+}
+.left_img img {
+    float: left;
+    width: 300px;
+    height: 500px;
+    margin-left: 110px;
+}
+.right_img img {
+    float: right;
+    width: 300px;
+    height: 500px;
+    margin-right: 110px;
+    /* padding-left: 50px; */
+}
+/* Larger text style */
+.larger-text {
+    font-size: 24px;
+    color: #000;
+}
+
+/* * Styles for the about section */ 
+/* CSS for the about-section */
+.about-section {
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 40px 20px; /* Add some padding for spacing */
+}
+
+/* Style for the content container */
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+/* Style for each item */
+.item {
+    flex-basis: calc(33.33% - 20px); /* Adjust the width for responsiveness */
+    margin: 10px;
+}
+
+
+/* Style for the image container */
+.image-container {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Style for individual images */
+.about-image {
+    max-width: 80px;
+    height: auto;
+}
+
+/* Style for the text container */
+.text-container {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+/* Style for the section headings */
+.about-text h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+/* Style for the section paragraphs */
+.about-text p {
+    font-size: 18px;
+    text-align: justify;
+    line-height: 1.5;
+    color: #666;
+}
+
+/* Hover effect for text containers */
+.text-container:hover {
+    background-color: #7BE0B5; /* Background color on hover */
+    border-color: #073B3A; /* Border color on hover */
+    color: #006400; /* Text color on hover */
+    cursor: pointer; /* Change cursor to a pointer on hover */
+    transform: scale(1.05); /* Scale up the section slightly on hover */
+}
+
+
+.footer {
+    text-align: center;
+    /* height: 100px; */
+    display: block;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-family: "Comic Sans Ms";
+    font-size: 20px; 
+    font-weight: bold;
+    background-color: #7BE0B5;
+}
+
+
+/* Add media queries for responsive design */
+@media screen and (max-width: 768px) {
+    /* Adjust styles for smaller screens */
+    .nav {
+        text-align: center;
+    }
+    .nav li {
+        font-size: 16px;
+        width: auto;
+    }
+    .search {
+        padding: 10px;
+    }
+    #intro_text {
+        font-size: 40px;
+        padding-top: 200px;
+        line-height: 50px;
+    }
+    .logo {
+        width: 150px;
+        height: 150px;
+        padding-left: 20px;
+    }
+    /* Add more responsive styles as needed */
+}
+
+@media screen and (max-width: 480px) {
+    /* Adjust styles for even smaller screens */
+    .nav {
+        text-align: center;
+    }
+    .nav li {
+        font-size: 14px;
+        width: auto;
+    }
+    .search {
+        padding: 5px;
+    }
+    #intro_text {
+        font-size: 30px;
+        padding-top: 150px;
+        line-height: 40px;
+    }
+    .logo {
+        width: 100px;
+        height: 100px;
+        padding-left: 10px;
+    }
+    /* Add more responsive styles as needed */
+}
+ 
+.glow-on-hover {
+    width: 195px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #073B3A;
+    background: #50c878;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    font-family: 'Comic Neue', cursive; /* Set the font to Comic Neue */
+    text-decoration: none; /* Remove underline */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    font-size: 18px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #50c878;
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #50c878;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+.button {
+    margin-right: 80px; /* Add right margin to create space between buttons */
+}

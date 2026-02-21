@@ -1,0 +1,49 @@
+body {
+    background-color: #e0f0c1;
+    color: #000;
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    text-align: center;
+    background-color: #a9c985;
+    padding: 10px;
+  }
+  
+  .review-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  .review {
+    background-color: #c8e6c7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .review h2 {
+    margin-top: 0;
+  }
+  
+  .review img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+  }
+  
+  .order-link {
+    display: block;
+    text-align: center;
+    background-color: #97c777;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .order-link:hover {
+    background-color: #7db960;
+  }

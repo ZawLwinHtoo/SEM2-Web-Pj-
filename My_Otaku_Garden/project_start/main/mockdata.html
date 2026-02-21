@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mock data</title>
+</head>
+<body>
+    <h1>Mock data</h1>
+
+    <h2>User Data</h2>
+    <div id="userData"></div>
+
+    <h2>User Arrays</h2>
+    <div id="userArrays"></div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Function to parse URL parameters
+            function getUrlParameter(name) {
+                name = name.replace(/[\[\]]/g, "\\$&");
+                const regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)");
+                const results = regex.exec(window.location.href);
+                if (!results) return null;
+                if (!results[2]) return "";
+                return decodeURIComponent(results[2].replace(/\+/g, " "));
+            }
+    
+            // Get the user data from URL parameters
+            const username = getUrlParameter("username");
+            const email = getUrlParameter("email");
+            const password = getUrlParameter("password");
+    
+            // Display user data
+            const userDataElement = document.getElementById("userData");
+            userDataElement.innerHTML = `
+                <p>Username: ${username}</p>
+                <p>Email: ${email}</p>
+                <p>Password: ${password}</p>
+            `;
+    
+            // Create arrays for username, email, and password
+            const usernamesArray = [username];
+            const emailsArray = [email];
+            const passwordsArray = [password];
+    
+            // Display user arrays
+            const userArraysElement = document.getElementById("userArrays");
+            userArraysElement.innerHTML = `
+                <p>Username Array: ${usernamesArray.join(", ")}</p>
+                <p>Email Array: ${emailsArray.join(", ")}</p>
+                <p>Password Array: ${passwordsArray.join(", ")}</p>
+            `;
+        });
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Retrieve user data from localStorage
+            const storedData = localStorage.getItem("userData");
+            
+            if (storedData) {
+                // Parse the JSON data
+                const userData = JSON.parse(storedData);
+                
+                // Access the user properties (username, email, password)
+                const username = userData.username;
+                const email = userData.email;
+                const password = userData.password;
+    
+                // Display or use the user data as needed
+                console.log("Username:", username);
+                console.log("Email:", email);
+                console.log("Password:", password);
+            } else {
+                console.log("No user data found.");
+            }
+        });
+    </script>
+
+    <script>
+        // Listen for requests from form.html
+        window.addEventListener("message", function(event) {
+            if (event.origin !== window.location.origin) return; // Check the origin for security
+            
+            if (event.data === "getUserData") {
+                // Retrieve user data or set it as needed
+                const userData = {
+                    email: "example@email.com", // Replace with your stored email
+                    password: "password123" // Replace with your stored password
+                };
+                
+                // Send the user data back to form.html
+                event.source.postMessage(userData, event.origin);
+            }
+        });
+    </script>
+    
+</body>
+</html>

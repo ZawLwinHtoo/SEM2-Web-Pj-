@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Roboto&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: rgba(109, 194, 109, 0.5);;
+    background-image: url(https://static.myfigurecollection.net/upload/pictures/2013/10/20/841396.jpeg);
+    background-blend-mode: multiply; /* Blend mode to apply the color on top of the image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+#wrapper {
+    font-family: "Comic Neue";
+    height: max-content;
+    width: 100%;
+} 
+
+/* Header section */
+.header {
+    text-align: center;
+    padding-top: 100px;
+}
+.logo {
+    margin-right: 100px;
+ 
+}
+h1.banner {
+    color: brown;
+    text-transform: uppercase;
+    background-color: azure;
+    width: 50%;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+/* shopping section */
+.card {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 7px;
+    box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+}
+
+.card_r {
+    float: right;
+    clear: left;
+    margin-left: 20px;
+    padding-top: 30px;
+    /* box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15); */
+}
+.card_l {
+    float: left;
+    clear: right;
+    margin-right: 20px;
+    padding-top: 30px;
+    /* box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15); */
+}
+.product-img_r , .product-img_l {
+    float: left;
+    height: 500px;
+    width: 327px;
+}
+.product-img_r img {
+    border-radius: 0 10px 10px 0;
+}
+.product-img_l img {
+    border-radius: 10px 0 0 10px;
+}
+.product-img_l img:hover, .product-img_r img:hover {
+  border: 2px solid #39A78E;
+}
+.product-info_l {
+    float: left;
+    height: 500px;
+    width: 327px;
+    background-color: #ffffff;
+    background-image: url(image/animeposters/animeposters/texture.png);
+    background-size: 327px 500px;
+    background-repeat: no-repeat;
+    border-radius: 0 10px 10px 0;
+}
+.product-info_r {
+    float: left;
+    height: 500px;
+    width: 327px;
+    background-color: #ffffff;
+    background-image: url(image/animeposters/animeposters/texture.png);
+    background-size: 327px 500px;
+    background-repeat: no-repeat;
+    border-radius: 10px 0 0 10px;
+}
+.product-info_l:hover, .product-info_r:hover {
+  border: 2px solid #39A78E;
+}
+.product-text h1 {
+    margin-left: 38px;
+    padding-top: 52px;
+    padding-bottom: 20px;
+    font-size: 34px;
+    color: #474747;
+} 
+.product-text p {
+    margin-left: 38px;
+    margin-right: 38px;
+    color: #8d8d8d;
+    line-height: 1.7em;
+    font-size: 15px;
+    text-align: justify;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+  
+.product-price-btn {
+    /* margin-bottom: 10px; */
+    padding-top: 100px;
+    /* position: relative; */
+}
+  
+.price {
+    text-align: center;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.tra {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.btn_link {
+    display: inline;
+}
+.product-price-btn button {
+    float: right;
+    display: block;
+    height: 50px;
+    width: 150px;
+    margin-right: 20px;
+    box-sizing: border-box;
+    border: transparent;
+    border-radius: 60px;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: black;
+    background-color: #9cebd5;
+    cursor: pointer;
+    outline: none;
+}
+.product-price-btn button:hover {
+    background-color: #79b0a1;
+}
+
+
+.banner {
+    color: black;
+    font-family: 'Comic Sans MS', sans-serif;
+}
+
+.footfig {
+    margin-top: 4300px;
+}

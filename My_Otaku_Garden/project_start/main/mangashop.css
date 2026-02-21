@@ -1,0 +1,9 @@
+body {
+    /* background: linear-gradient(to bottom right, #00cc66 0%, #66ff66 100%); */
+    background-image: url(https://wallpaper-house.com/data/out/12/wallpaper2you_521182.jpg);
+    background-blend-mode: multiply;  /*Blend mode to apply the color on top of the image*/
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+} 

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href = "stylesajax.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="addtocart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/solid.min.css" integrity="sha512-P9pgMgcSNlLb4Z2WAB2sH5KBKGnBfyJnq+bhcfLCFusrRc4XdXrhfDluBl/usq75NF5gTDIMcwI1GaG5gju+Mw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="../Assets/css/fontawesome.min.css" rel="stylesheet">
+  <link href="../Assets/css/regular.min.css" rel="stylesheet">
+  <link href="../Assets/css/solid.min.css" rel="stylesheet">
+</head>
+
+<style>
+    .banner {
+        color: black;
+        font-family: 'Comic Sans MS', sans-serif;
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Roboto&display=swap');
+    .larger-text {
+        font-size: 20px;
+    }
+    </style>
+    <script src="header.js"></script>
+   
+    
+<body>
+    <div id="wrapper">
+        <!-- Nav Section -->
+        <div class="navbar"> 
+             <div class="menu-container">
+                 <div class="menu-icon" id="menu-icon">
+                     <!-- Font Awesome menu icon -->
+                     <i class="fas fa-bars"></i>
+                 </div>
+             </div>  
+             <div class="menu-icon" id="menu-icon">
+                 <div class="bar"></div>
+                 <div class="bar"></div>
+                 <div class="bar"></div>
+             </div>
+             <ul class="nav" id="nav">
+                 <li><a href="home.html#wrapper">Home</a></li>
+                 <li><a href="home.html#about">About</a></li>
+                 <li><a href="animeshop.html">Anime</a></li>
+                 <li><a href="mangashop.html">Manga</a></li>
+                 <li><a href="figshop.html">Collectibles</a></li>
+                 <li><a href="Products.html">Products </a></li>
+                 <li><a href="form.html">Sign Up</a></li>
+                 <div class = cart><i class="fas fa-cart-shopping" style="color: #82e39f;"><p id= "count">0</p></i></div>
+             </ul>
+         </div>
+     </div>
+     
+        <div class = "container">
+         <div id = "root"></div>
+         <div class ="sidebar">
+            <div class="searchbar">
+                <input placeholder="Search..." id="searchBar" name="searchBar" type="text">
+                <i class="fa fa-solid fa-magnifying-glass glass fa-bounce"></i>
+            </div>
+            <div class = "head"><p>My Cart</p></div>
+            <div id = "cartItem">Your Cart is Empty Now</div>
+            <div class ="foot">
+                <h3>Total</h3>
+                <h2 id = "Total"> $ 0.00</h2>
+                <a href="orderform.html"><button> Confirm Order!</button></a>
+            </div>
+            
+         </div>
+
+        </div>
+        <script src = "addtocart.js"></script>
+
+</body>
+</html>

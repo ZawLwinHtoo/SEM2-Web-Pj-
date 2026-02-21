@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in and Sign up</title>
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="style1.css">
+</head> 
+<body>
+    <h2>Log in or sign up to our OTAKU Garden</h2>
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+          
+          <form >
+            <h1>Create Account</h1>
+      
+                <input type="text" placeholder="Name" id = "username" required name = "username">
+                <input type="email" placeholder="Email" id = "email" required name = "email">
+                <input type="password" placeholder="Password" id ="password" required name = "password">
+                <button id="submit" onclick = submitForm()>Sign Up</button>
+           </form>
+        </div>
+        <div class="form-container sign-in-container">
+
+          
+         <form >
+            <input type="hidden" name="signin" value="1"> <!-- Add this hidden field to indicate signin -->
+                        <h1>Sign in</h1>
+            
+                <input type="text" placeholder="Email" required  name="reqemail" id = "reqemail">
+                <input type="password" placeholder="Password" required  name="reqpassword" id = "reqpassword">
+
+                <a href="#">Forgot your password?</a>
+                
+                <button onclick = loginsub()>Sign In</button>
+                
+                
+                
+         </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome Back!</h1>
+                    <p>To keep connected with us please login with your personal info</p>
+                    <button class="ghost" id="signIn">Sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>Enter your personal details and start journey with us</p>
+                    <button class="ghost" id="signUp" >Sign Up</button>
+                    <a href="home.html"><button >Home</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- <footer>
+  <p>
+    Created with <i class="fa fa-heart"></i> by
+    <a target="_blank" href="https://florin-pop.com">Florin Pop</a>
+    - Read how I created this and how you can join the challenge
+    <a target="_blank" href="https://www.florin-pop.com/blog/2019/03/double-slider-sign-in-up-form/">here</a>.
+  </p>
+</footer> -->
+
+<script src="form.js"></script>
+<script>
+    function submitForm() {
+      
+       let username = document.getElementById('username').value;
+       let password = document.getElementById('password').value;
+       let user_email = document.getElementById('email').value;
+            
+      localStorage.setItem('username', username);
+      localStorage.setItem('password', password);
+      localStorage.setItem('email', user_email);
+       
+    };
+</script>
+
+<!-- <script>
+    document.getElementById('signup-form').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+      const user_email = document.getElementById('user_email').value;
+
+      const response = await fetch('/signup', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ username, password , user_email})
+      });
+    
+      const data = await response.json();
+      console.log(data.message);
+    });
+
+    </script> -->
+</body>
+</html>

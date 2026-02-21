@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+#wrapper {
+    font-family: "Comic Neue";
+    background-color: #A8E4A0;
+    width: 100%;
+} 
+ /* Nav Section  */
+.nav {
+    width: 100%;
+}       
+.nav, .sub {
+    list-style-type: none;
+    background-color: #50c878;
+    opacity: 0.9;
+    position: fixed;
+}
+.nav li a {
+    text-decoration: none;
+    color:#C7EA46;
+}
+.nav li a:hover { 
+    font-size: 21px;
+    font-weight: bold;
+    color: white;
+}  
+.nav li { 
+    background-color: #50c878; 
+    height: 50px; 
+    line-height: 50px; 
+    text-align: center; 
+    font-size: 20px;
+    width: 150px; 
+} 
+.nav > li {
+    float: left;
+    border-right: 2px solid #39A78E;
+}
+.sub li { 
+    border-bottom: 2px solid #39A78E;
+}
+.nav > li:hover .sub { 
+    display: block; 
+} 
+.sub { 
+    display: none; 
+}
+.search {
+    float: right;
+    padding: 10px;
+    padding-right: 70px;
+    padding-left: 70px;
+    background-color: #50c878;
+}
+.search input[type="text"] {
+    border-color:aqua;
+}
+.search label img {
+    /* color: #C7EA46;
+    font-size: 20px; */
+    margin-top: 5px;
+    width: 15px;
+    height: 15px;
+}
+#srh {
+    border-radius: 30px;
+    padding: 5px;
+    padding-right: 49px;
+}
+/* Home Section */
+.intro {
+    background-image: url(image/hatsune-miku-closeup.jpg);
+    background-size: cover;
+    height: 1000px;
+}
+#intro_text {
+    font-size: 70px;
+    padding-top: 300px;
+    padding-left: 50px;
+    line-height: 80px;
+    text-align: justify;
+    color: #50c878;
+}
+.logo {
+    width: 250px;
+    height: 250px;
+    padding-left: 120px;
+    /* position: relative; */
+}
+/* About Section */
+#about {
+    padding: 70px;
+    text-align: center;
+    background-color:  #d4e09b;
+    justify-content: space-between;
+    margin: 20px ;
+}
+#reflect_box {
+    border: solid #fadcc1;
+    background-color: #fadcc1;
+    width: 300px;
+    height: 300px;
+    margin: 80px 250px;
+}
+#textbox {
+    border: solid #ffcda2;
+    background-color:#ffcda2;
+    width: 300px;
+    height: 300px;
+    margin: 30px;
+}
+/* About images */
+#textboxes {
+    display: flex;
+  justify-content: space-between; /* Align passages with space between them */
+  margin: 20px;
+    flex: 1;
+    margin: 0 10px;
+}
