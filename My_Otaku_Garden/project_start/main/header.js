@@ -1,7 +1,7 @@
 // JavaScript code for hiding the preloader once the page is fully loaded
 window.addEventListener('load', function () {
     const preloader = document.querySelector('.preloader');
-    preloader.style.display = 'none';
+    if (preloader) preloader.style.display = 'none';
   });
 
 //   document.addEventListener("DOMContentLoaded", function () {
@@ -18,4 +18,4 @@ window.addEventListener('load', function () {
 //     $(".nav").toggleClass("active");
 // });
 // });
-    
+
