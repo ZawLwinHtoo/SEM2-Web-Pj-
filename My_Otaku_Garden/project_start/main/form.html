@@ -7,37 +7,37 @@
     <link rel="stylesheet" href="form.css">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="style1.css">
-</head> 
+</head>
 <body>
     <h2>Log in or sign up to our OTAKU Garden</h2>
     <div class="container" id="container">
         <div class="form-container sign-up-container">
-          
-          <form >
+
+          <form id="signupForm">
             <h1>Create Account</h1>
-      
+
                 <input type="text" placeholder="Name" id = "username" required name = "username">
                 <input type="email" placeholder="Email" id = "email" required name = "email">
                 <input type="password" placeholder="Password" id ="password" required name = "password">
-                <button id="submit" onclick = submitForm()>Sign Up</button>
+                <button id="submit" >Sign Up</button>
            </form>
         </div>
         <div class="form-container sign-in-container">
 
-          
-         <form >
+
+         <form id="signinForm">
             <input type="hidden" name="signin" value="1"> <!-- Add this hidden field to indicate signin -->
                         <h1>Sign in</h1>
-            
+
                 <input type="text" placeholder="Email" required  name="reqemail" id = "reqemail">
                 <input type="password" placeholder="Password" required  name="reqpassword" id = "reqpassword">
 
-                <a href="#">Forgot your password?</a>
-                
-                <button onclick = loginsub()>Sign In</button>
-                
-                
-                
+                <p>Local demo account. Password reset email is not configured.</p>
+
+                <button >Sign In</button>
+
+
+
          </form>
         </div>
         <div class="overlay-container">
@@ -66,39 +66,10 @@
   </p>
 </footer> -->
 
+<p id="formStatus" role="status" aria-live="polite"></p>
 <script src="form.js"></script>
-<script>
-    function submitForm() {
-      
-       let username = document.getElementById('username').value;
-       let password = document.getElementById('password').value;
-       let user_email = document.getElementById('email').value;
-            
-      localStorage.setItem('username', username);
-      localStorage.setItem('password', password);
-      localStorage.setItem('email', user_email);
-       
-    };
-</script>
 
-<!-- <script>
-    document.getElementById('signup-form').addEventListener('submit', async (e) => {
-      e.preventDefault();
-      
-      const username = document.getElementById('username').value;
-      const password = document.getElementById('password').value;
-      const user_email = document.getElementById('user_email').value;
 
-      const response = await fetch('/signup', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ username, password , user_email})
-      });
-    
-      const data = await response.json();
-      console.log(data.message);
-    });
-
-    </script> -->
+<!--  -->
 </body>
 </html>
